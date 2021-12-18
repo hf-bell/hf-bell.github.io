@@ -50,7 +50,7 @@ a:hover{
 .body {
     background-color:ghostwhite;
     background-size: 200px 200px;
-    font-family: 'SF Pro Display', Fallback, sans-serif;
+    font-family: 'IBM Plex Sans';
     /*background-image: radial-gradient(circle, #000000 0.5px, rgba(0, 0, 0, 0) 0.5px);*/
     background-image:
       linear-gradient(to right, grey 1px, transparent 0.1px),
@@ -82,7 +82,7 @@ a:hover{
 .aside {
     float: right;
     width: 30%;
-    font-family: 'SF Pro Display', Fallback, sans-serif;
+    font-family: 'IBM Plex Sans';
 
 }
   p {
