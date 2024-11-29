@@ -15,10 +15,11 @@
 
     @font-face {
       font-family: 'SF Pro';
-    src: url('assets/fonts/SF-Pro-Text-Bold.otf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+      src: url('assets/fonts/SF-Pro-Text-Bold.otf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
     }
+
     body {
       margin: 0;
       font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -71,6 +72,28 @@
       stroke-width: 2;
       fill: none;
     }
+
+    .posts {
+      margin-top: 30px;
+    }
+
+    .post {
+      margin-bottom: 20px;
+    }
+
+    .post h2 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+
+    .post a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    .post a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -82,6 +105,18 @@
       <a href="https://github.com/hf-bell" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
     </div>
+
+    <!-- Blog Posts Section -->
+    <div class="posts">
+      {% for post in site.posts %}
+        <div class="post">
+          <h2><a href="{{ post.url }}">{{ Introduction to Graph Neural Networks}}</a></h2>
+          <p>{{ post.excerpt }}</p>
+          <a href="{{ post.url }}">Read more</a>
+        </div>
+      {% endfor %}
+    </div>
+
   </div>
   <div class="design">
     <svg viewBox="0 0 100 100">
