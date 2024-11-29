@@ -1,22 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="main_style.css">
-    <title>hf-bell</title>
-  </head>
-  <div class="header">
-    <a href=index.html class="name">Hugo Bell</a>
-    <a href=CV.html class="tabs">CV</a>
-    <a href=ml_projects.html class="tabs">Projects</a>
-    
-    <span class="tabs"> Contact </span>
-  </div>
-  <div class="section">
-      <link rel="stylesheet" href="main_style.css">
-      <div class = 'info'>
-        // information
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugo Bell</title>
+  <style>
+    /* Font Settings */
+    @font-face {
+      font-family: 'SF Pro';
+      font-style: normal;
+      font-weight: 400;
+      src: local("SF Pro Display"), local("SF Pro"), local("San Francisco"), 
+           -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
 
-      <p>personal webpage</p>
+    body {
+      margin: 0;
+      font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #4A90E2; /* Blue background */
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container {
+      text-align: left;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 0 0 20px 0;
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 10px 0;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover {
+      color: #FFD700; /* Gold on hover */
+    }
+
+    .design {
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+    }
+
+    .design svg {
+      width: 100px;
+      height: 100px;
+      stroke: white;
+      stroke-width: 2;
+      fill: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hugo Bell</h1>
+    <div class="links">
+      <a href="cv.html">CV</a>
+      <a href="posts.html">POSTS</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </div>
   </div>
+  <div class="design">
+    <svg viewBox="0 0 100 100">
+      <polyline points="0,0 50,0 50,50 0,50 0,0" />
+      <polyline points="50,50 100,50 100,100 50,100 50,50" />
+    </svg>
+  </div>
+</body>
 </html>
